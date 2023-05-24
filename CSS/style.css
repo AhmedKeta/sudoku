@@ -1,0 +1,112 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-image: url('../Img/background.avif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: scroll;
+}
+
+
+.formContainer {
+  width: 350px;
+  height: 320px;
+  background-color: rgb(245, 139, 0);
+  margin: 10px auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 5px 10px #e7c21d77;
+  padding: 10px;
+  border: 1px solid black;
+  padding-top: 50px;
+}
+
+.formContainer form input,
+.formContainer form select {
+  width: 300px;
+  margin: 10px auto;
+  display: flex;
+  height: 25px;
+  font-size: larger;
+}
+
+.formContainer form label {
+  margin: 10px auto;
+  font-size: larger;
+  margin-left: 25px;
+}
+
+.formContainer form .startPlay {
+  margin: 10px auto;
+  font-size: larger;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  background-color: #adadad;
+}
+
+.formContainer form .startPlay:hover {
+  cursor: pointer;
+  background-color: #7f95f8;
+}
+
+.formContainer form .startPlay:disabled {
+  cursor: not-allowed;
+  background-color: #f87f7f;
+}
+
+
+
+.formContainer form input#fullName+span {
+  margin-left: 25px;
+  position: absolute;
+  color: red;
+  display: none;
+  transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
+  direction: rtl;
+  width: 250px;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.formContainer form input:focus {
+  outline: 0;
+}
+
+.icon {
+  text-align: center;
+}
+
+.formContainer i {
+  color: rgb(180, 0, 0);
+  vertical-align: middle;
+}
+
+button:active {
+  transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
+}

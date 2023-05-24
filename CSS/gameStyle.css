@@ -1,0 +1,212 @@
+@import url('https://fonts.cdnfonts.com/css/alarm-clock');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Work Sans", sans-serif;
+    background-image: url('../Img/background.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.container {
+    width: 80%
+}
+
+div.collection {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #f87f7f;
+    margin: 10px 10px;
+    width: 400px;
+    height: 400px;
+    background-color: #00747c;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    width: 100%;
+    height: 150px;
+}
+
+
+
+div.collection img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 7% auto;
+    background-color: #55007c;
+    margin-top: 5px;
+}
+
+.collection p {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 5px;
+    padding-bottom: 0;
+}
+
+div.container button {
+    width: 100%;
+    margin: 10px auto;
+    height: 30px;
+    background-color: #ffa600;
+    font-size: larger;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+div.container button:hover {
+    cursor: pointer;
+    background-color: #7f95f8;
+}
+
+div.container button:active {
+    background-color: #00e1ff;
+}
+
+div.container button:disabled {
+    background-color: #fc4d4d46;
+    cursor: not-allowed;
+}
+
+.gameBox {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #01b0bd93;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.gameBox div {
+    flex: 1 1 20%;
+    width: 100px;
+    height: 100px;
+    background-color: #7f95f8;
+    margin: 10px;
+    border-radius: 3px;
+}
+
+.gameBox div.activ {
+    border: 3px solid black;
+}
+
+.gameBox div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+h1 {
+    margin: 10px auto;
+    text-align: center;
+    color: red;
+}
+
+.static {
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.timer {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'alarm clock', sans-serif;
+    height: 50px;
+}
+
+.winMessage,
+.loseMessage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    display: none;
+}
+
+.message {
+    z-index: 100;
+    width: 450px;
+    height: 600px;
+    background-color: #f87f7fe1;
+    margin: 150px auto;
+    text-align: center;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.message img {
+    width: 450px;
+    mix-blend-mode: multiply;
+}
+
+.message button {
+    width: 200px;
+    height: 50px;
+    background-color: #ff4800;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+.message button:hover {
+    color: #00e1ff;
+    background-color: #ff0000a4;
+}
+
+.winMessage p,
+.loseMessage p {
+    direction: rtl;
+    width: 95%;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+}
+
+.winMessage p:hover,
+.loseMessage p:hover {
+    cursor: pointer;
+    color: red;
+}
